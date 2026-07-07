@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
+
 using namespace std;
-#define ll long long
-#define endl '\n'
+
 void io_st(){
     #ifndef ONLINE_JUDGE
         freopen("input.txt", "r", stdin);
@@ -11,17 +11,5 @@ void io_st(){
         cin.tie(nullptr);
         cout.tie(nullptr);
 }
-void solve()
-{
-    int x1,y1,r;
-    cin>>x1>>y1>>r;
-    int x2,y2;
-    cin>>x2>>y2;
-    
-}
 
-int main()
-{
-    io_st();
-    solve();
-}
+cout << fixed << setprecision(5) << x << '\n';
