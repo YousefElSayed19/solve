@@ -13,12 +13,9 @@ void io_st(){
 }
 void solve()
 {
-    int x1,y1,r;
-    cin>>x1>>y1>>r;
-    int x2,y2;
-    cin>>x2>>y2;
-    
-}
+    string n;
+    cin>>n;
+    cout<<n[0]<<endl;1
 
 int main()
 {
