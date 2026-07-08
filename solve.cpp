@@ -14,9 +14,8 @@ void io_st()
 }
 void solve()
 {
-    int n, i;
-    cin >> n >> i;
-    cout << n - i + 1 << endl;
+    string s;
+    cin>>s;
 }
 int main()
 {
