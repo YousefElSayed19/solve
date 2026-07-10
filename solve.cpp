@@ -14,12 +14,19 @@ void io_st()
 }
 void solve()
 {
-    int a,b;cin>>a>>b;
-    int c= 0 ;
-    while(a<=b){
-        a*=3;
-        b*=2;
-        c++;
+    ll n;cin>>n;
+    int c= 0;
+    if(n%5!=0){
+        cout<<"NO"<<endl;
+        return ;
+    }else{
+        if(n>=15){
+            c+=n/15;
+            n%=15;
+        }
+        if(n>=5){
+            c++;
+        }
     }
     cout<<c<<endl;
 }
