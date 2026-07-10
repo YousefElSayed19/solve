@@ -14,6 +14,20 @@ void io_st()
 }
 void solve()
 {
+    ll n;cin>>n;
+    int c= 0;
+    if(n%5!=0){
+        cout<<"NO"<<endl;
+        return ;
+    }else{
+        if(n>=15){
+            c+=n/15;
+            n%=15;
+        }
+        if(n>=5){
+            c++;
+        }
+    }
 
 }
 int main()
