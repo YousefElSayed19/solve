@@ -28,7 +28,7 @@ void solve()
             c++;
         }
     }
-
+    cout<<c<<endl;
 }
 int main()
 {
