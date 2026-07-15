@@ -15,29 +15,12 @@ void io_st()
 void solve()
 {
 
-    string s;
-    cin >> s;
-
-    stack<char> st;
-    int ans = 0;
-
-    for (char c : s)
-    {
-        if (c == '(')
-        {
-            st.push(c);
-        }
-        else
-        {
-            if (!st.empty())
-            {
-                st.pop();
-                ans += 2;
-            }
-        }
+    ll n ; cin>>n;
+    if(n>0 && n&(n-1)==0){
+        cout<<"YES"<<endl;
+    }else{
+        cout<<"NO"<<endl;
     }
-
-    cout << ans << endl;
 }
 int main()
 {
