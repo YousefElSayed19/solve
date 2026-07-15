@@ -14,13 +14,21 @@ void io_st()
 }
 void solve()
 {
-    ll n ;cin>>n;
-    for(ll i= 0 ; i*i <= n;i++){
+    long long n;
+    cin >> n;
+
+    if (n <= 1) {
+        cout << "NO";
+        return ;
+    }
+
+    for (long long i = 2; i * i <= n; i++) {
         if (n % i == 0) {
             cout << "NO";
             return ;
         }
     }
+
     cout << "YES";
 }
 int main()
