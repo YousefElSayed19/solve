@@ -14,13 +14,14 @@ void io_st()
 }
 void solve()
 {
-
-    ll n ; cin>>n;
-    if(n>0 && (n&(n-1))==0){
-        cout<<"YES"<<endl;
-    }else{
-        cout<<"NO"<<endl;
+    ll n ;cin>>n;
+    for(ll i= 0 ; i*i <= n;i++){
+        if (n % i == 0) {
+            cout << "NO";
+            return ;
+        }
     }
+    cout << "YES";
 }
 int main()
 {
