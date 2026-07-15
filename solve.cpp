@@ -14,21 +14,30 @@ void io_st()
 }
 void solve()
 {
-    ll n;cin>>n;
-    int c= 0;
-    if(n%5!=0){
-        cout<<"NO"<<endl;
-        return ;
-    }else{
-        if(n>=15){
-            c+=n/15;
-            n%=15;
+
+    string s;
+    cin >> s;
+
+    stack<char> st;
+    int ans = 0;
+
+    for (char c : s)
+    {
+        if (c == '(')
+        {
+            st.push(c);
         }
-        if(n>=5){
-            c++;
+        else
+        {
+            if (!st.empty())
+            {
+                st.pop();
+                ans += 2;
+            }
         }
     }
 
+    cout << ans << endl;
 }
 int main()
 {
