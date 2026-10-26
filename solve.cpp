@@ -10,7 +10,7 @@ void io_st()
 #endif
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-    cout.tie(nullptr);
+    cout.tie(nullptr); 
 }
 void solve()
 {
